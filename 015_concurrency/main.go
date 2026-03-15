@@ -52,6 +52,7 @@ func sum(s []int, c chan int) {
 }
 
 // --- 3. Close and Range ---
+// 'close' is a BUILT-IN function (no library needed).
 // A sender can close a channel to indicate that no more values will be sent.
 func fibonacci(n int, c chan int) {
 	x, y := 0, 1
