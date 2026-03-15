@@ -7,6 +7,6 @@ import "fmt"
 // a function (func(int) int) and returns the result of applying the 
 // function to the int.
 
-func exercise() { // Rename to main() to run this file
+func main() { 
 	fmt.Println("Function Value exercises!")
 }

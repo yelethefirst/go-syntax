@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func exercise() { // Rename to main() to run this file
+func main() { 
 	// EXERCISE 1: Declare a variable 'age' using 'var' and 
 	// another variable 'name' using the short assignment operator ':= '.
 

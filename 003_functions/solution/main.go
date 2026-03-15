@@ -8,7 +8,7 @@ import "fmt"
 // EXERCISE 2: Create a function called 'swap' that returns two 
 // strings in reverse order.
 
-func exercise() { // Rename to main() to run this file
+func main() { 
 	// Call your functions here and print the results.
 	fmt.Println("Function exercises!")
 }
