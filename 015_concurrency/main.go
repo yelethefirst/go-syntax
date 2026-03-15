@@ -2,9 +2,33 @@ package main
 
 import (
 	"fmt"
-	"sync"
+	"sync" // The "Synchronization" package
 	"time"
 )
+
+/*
+THE SYNC LIBRARY: The Kitchen Safety Manual
+
+While Go's philosophy is "Don't communicate by sharing memory; share memory by communicating" (using Channels), 
+the 'sync' package provides low-level tools for when you HAVE to share memory safely.
+
+Common Tools in the sync library:
+1. sync.WaitGroup: The "Kitchen Bell". Use this to wait for a collection of goroutines to finish.
+   - .Add(n): "I'm hiring 'n' more chefs."
+   - .Done(): "I'm finished with my task!" (Rings the bell).
+   - .Wait(): "Don't close the kitchen until everyone has rung their bell."
+
+2. sync.Mutex: The "Fridge Key" (Mutual Exclusion). Use this to ensure only one goroutine touches a variable at a time.
+   - .Lock(): "I have the key! Nobody else can touch the fridge."
+   - .Unlock(): "I'm done. Here's the key for the next person."
+
+3. sync.Once: The "One-Time Setup". Ensures a piece of code (like initializing a database) runs exactly once, 
+   no matter how many goroutines try to call it.
+
+When to use 'sync' vs 'channels'?
+- Use CHANNELS when you are passing data around (The Conveyor Belt).
+- Use SYNC when you are protecting a shared variable (The Shared Fridge).
+*/
 
 // --- 1. Goroutines ---
 // A goroutine is a lightweight thread managed by the Go runtime.
