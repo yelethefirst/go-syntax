@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func main() {
+func exercise() { // Rename to main() to run this file
 	// EXERCISE 1: Use a WaitGroup to spawn 3 goroutines that 
 	// print their ID and then exit.
 
